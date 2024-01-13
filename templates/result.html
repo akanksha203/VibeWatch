@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoviePrediction</title>
+  <link rel="stylesheet" type="text/css" href="static/result.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+
+  <link rel="icon" href="../static/images/logo.png" type="image/png">
+</head>
+<body>
+  <div class="navbar">
+  <div class="logo">
+    <img src="../static/images/logo.png" alt="VibeWatch Logo" class="logo-image">
+    <span>VibeWatch</span>
+  </div>
+  </div>
+  <h1>Detected Emotion: <span style="color: red;">{{ detected_emotion }}</span></h1>
+  {% if movie_recommendations %}
+    <h2>Predicted Movies are:-</h2>
+    <ul>
+      {% for movie in movie_recommendations %}
+        
+          <div class="posters">
+            <a href="https://www.themoviedb.org/movie/{{ movie.id }}" target="_blank">
+              <img src="{{ movie.poster_path }}" alt="{{ movie.title }} Poster" class="photo">
+            </a>
+            <p>{{ movie.title }} ({{ movie.rating }})</p>
+          </div>
+        
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No movie recommendations for this emotion.</p>
+  {% endif %}
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VibeWatch</title>
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+
+   <link rel="icon" href="../static/images/logo.png" type="image/png">
+
+</head>
+<body>
+  
+  <div class="navbar">
+    <div class="logo">
+        <img src="../static/images/logo.png" alt="VibeWatch Logo" class="logo-image">
+        <span>VibeWatch</span>
+    </div>
+    <div class="nav-links">
+        <a href="#" class="tooltip-container">Home <div class="tooltip" style="width: 250px;"><br>Stay tuned for the latest updates and news from the world of entertainment.<br><br></div></a>
+        <a href="#" class="tooltip-container" >Features <div class="tooltip" style="width: 250px;"> <br>At VibeWatch, we're passionate about helping you discover movies that match your current mood.<br><br>Whether you're in the mood for a thrilling adventure, a heartwarming romance, or a laugh-out-loud comedy, VibeWatch has got you covered. Our advanced algorithm analyzes your facial expressions to suggest movies that perfectly match your vibe.<br><br></div></a>
+        <a href="#" class="tooltip-container" >Contact <div class="tooltip" style="width: 250px;"><br>Contact us at:<br><br>Email:-<br>akankshachamoli03@gmail.com <br><br> Phone:-<br>+91-9089098979<br><br></div></a>
+        <a href="#" class="tooltip-container">Support <div class="tooltip" style="width: 220px;"><br>For technical issues, bug reports, or general inquiries about VibeWatch, our support team is ready to assist you.<br> Please use the contact information to reach out to us. <br><br></div></a>
+        <a href="#" class="tooltip-container">Help <div class="tooltip" style="width: 160px;"><br>Upload a photo, explore suggestions, and enjoy the vibe!<br><br></div></a>
+    </div>
+  </div>
+  
+  <div class="content">
+    <h1>Feel the Flicks: Your Emotion, Your Movie...!</h1>
+    <p>Welcome to the VibeWatch! Discover movies tailored to your mood by using facial expressions. Simply upload a photo of your face, and our advanced algorithm will analyze your expression to suggest movies that match your current vibe.</p>
+  </div>
+ 
+  <form action="upload" method="post" class="image-form" enctype="multipart/form-data">
+    <label for="myFile" class="image-upload">Upload Image</label>
+    <input type="file" id="myFile" name="myFile" accept="image/*" />
+    <button type="submit"  class="submit-button">Submit</button>
+    <div id="img-preview">
+        <span>DROP<br> YOUR<br> IMAGE HERE!!</span>
+    </div>
+  </form>
+  
+<script type="text/javascript" src="../static/recommend.js"></script>
+
+
+</body>
+</html>
