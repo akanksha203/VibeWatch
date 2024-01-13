@@ -15,7 +15,7 @@ Step 4: create a folder "new" inside "Emotion_detection" folder.In new there wil
 
 Step 5: Open the folder "Emotion_detection" with VSCode and in the terminal write "python movie_recommendation.py"
 
-Step 6: Open chrome and search "http://127.0.0.1:5000/",5-10 seconds after doing step 5
+Step 6: Open chrome and search "http://127.0.0.1:5000",    5-10 seconds after doing step 5
 
 
 
