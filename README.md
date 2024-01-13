@@ -21,8 +21,8 @@ Step 6: Open chrome and search "http://127.0.0.1:5000",    5-10 seconds after do
 
 IF YOU WANT TO TRAIN YOUR OWN MODEL--
 
-Step 1: run the code of "emotion detection.ipynb" in jupyter notebook
+Step 1: run the code of "facial_expression_recognition.ipynb" in jupyter notebook
 
-Step 2: save the model in "Emotion_detection/static"
+Step 2: save the model in "Emotion_detection/static" with the name expression_1.model
 
 Step 3: Repeat all the steps just like you do in above part
